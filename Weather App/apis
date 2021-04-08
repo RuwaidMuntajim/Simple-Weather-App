@@ -1,0 +1,140 @@
+
+// yahoo
+        fetch("https://yahoo-weather5.p.rapidapi.com/weather?lat=22.3702714&long=91.82074569999999&format=json&u=c", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "7397ce9bf9mshdc43476e31b2172p1676c5jsn4a6eaa56dabf",
+                "x-rapidapi-host": "yahoo-weather5.p.rapidapi.com"
+            }
+        })
+        .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    var C = data.current_observation.condition.temperature;
+                    var F = C * (9/5) + 32;
+                    location.innerHTML = data.location.timezone_id;
+                    degree.innerHTML = C + "°C" + " | " + F.toFixed(0) + "°F";
+                    description.innerHTML = data.current_observation.condition.text;
+
+
+// aerisweather1
+        fetch("https://aerisweather1.p.rapidapi.com/forecasts/" + lat + "," + long + "/?plimit=7&filter=1hr", {
+                    "method": "GET",
+                    "headers": {
+                    "x-rapidapi-key": "7397ce9bf9mshdc43476e31b2172p1676c5jsn4a6eaa56dabf",
+                    "x-rapidapi-host": "aerisweather1.p.rapidapi.com"
+                    }
+                })
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    var C = data.response[0].periods[0].maxTempC;
+                    var F = (C) * (9/5) + 32;
+                    console.log(F);
+                    location.innerHTML = data.response[0].profile.tz;
+                    degree.innerHTML = C + " °C" + " | " + F + " °F";
+                    description.innerHTML = data.response[0].periods[0].weather;
+                })
+                .catch(err => {
+                    console.error(err);
+                });
+                
+            });
+        })
+
+
+
+
+
+} else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            }  else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            }
+
+
+            else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            }  else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            } else if (data.current_observation.condition.text == "Mostly Clear") {
+                icon.src = 'animated/cloudy-night-1.svg';
+                
+            }
